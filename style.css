@@ -29,6 +29,9 @@ html {
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
+.active-link {
+  border-bottom: 1px solid;
+}
 
 .item {
   justify-items: center;
