@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 .background {
-  background: url(/assets/5.jpg);
+  background: url("/assets/5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,6 +124,9 @@ html {
   cursor: pointer;
   transform: scale(1.1);
 }
+.login {
+  justify-content: center;
+}
 
 .item-1 {
   grid-column: 1 / span 6;
@@ -143,11 +146,11 @@ html {
 .item-2 {
   grid-column: 2 / span 1;
   background: url("/assets/model3.jpg");
+  height: 400px;
+  transition: 0.8s;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
-  transition: 0.8s;
 }
 .item-2:hover {
   cursor: pointer;
@@ -171,7 +174,7 @@ html {
   background: url("/assets/model4.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeats;
+  background-repeat: no-repeat;
 }
 .item-4:hover {
   cursor: pointer;
@@ -180,9 +183,9 @@ html {
 .item-5 {
   grid-column: 5 / span 1;
   background: url("/assets/model.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 .item-5:hover {
   cursor: pointer;
@@ -193,6 +196,9 @@ html {
   grid-column: 1 / span 2;
   transition: 0.5s;
   padding: 1rem;
+}
+.item-6 img {
+  height: 500px;
 }
 .item-6:hover {
   cursor: pointer;
@@ -205,6 +211,10 @@ html {
 .item-7 {
   grid-column: 3 / span 2;
   transition: 0.5s;
+  align-items: center;
+}
+.item-7 img {
+  height: 500px;
 }
 .item-7:hover {
   cursor: pointer;
@@ -221,6 +231,9 @@ html {
   grid-column: 5 / span 2;
   transition: 0.5s;
   padding: 1rem;
+}
+.item-8 img {
+  height: 500px;
 }
 .item-8:hover {
   cursor: pointer;
@@ -276,3 +289,346 @@ html {
 .item-9-sigin a:hover {
   transform: scale(1.2);
 }
+
+/*---------------@media max-width:500px-------------- */
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 1rem;
+    width: 100%;
+    height: 100vh;
+  }
+  /*------------------------------------------*/
+  .item item-0 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 6;
+  }
+  .logo {
+    display: none;
+  }
+  .nav-links {
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .other-links {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .login {
+    justify-content: center;
+  }
+  /*------------------------------------------*/
+  .item-1 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 6;
+    padding: 1rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  /*-------------------------------------------*/
+
+  .background-item-2,
+  .background-item-3,
+  .background-item-4,
+  .background-item-5 {
+    height: 400px;
+  }
+
+  .item-2,
+  .item-4 {
+    grid-column: 1 / span 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .item-3,
+  .item-5 {
+    grid-column: 4 / span 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*-------------------------------------------*/
+  .content-item-6,
+  .content-item-7,
+  .content-item-8 {
+    font-size: 1rem;
+  }
+
+  .background-item-6,
+  .background-item-7,
+  .background-item-8 {
+    width: 100%;
+    height: auto;
+  }
+
+  .item-6 {
+    grid-column: 1 / span 6;
+  }
+
+  .item-7 {
+    grid-column: 1 / span 6;
+  }
+  .item-8 {
+    grid-column: 1 / span 6;
+  }
+
+  /*-------------------------------------------*/
+  .item-9 {
+    grid-column: 1 / span 6;
+  }
+  .item-9 a {
+    font-size: 1rem;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+  }
+  /*----------------Footer--------------------------*/
+  .item-9-sigin {
+    display: none;
+  }
+  .fotnot {
+    font-size: 1rem;
+  }
+}
+
+/*----------------@media max-width: 750px --------------*/
+
+@media (max-width: 750px) {
+  body {
+    overflow: scroll;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 1rem;
+    width: 100%;
+    height: 100vh;
+  }
+  /*------------------------------------------*/
+  .item item-0 {
+    display: flex;
+    grid-column: 1 / span 6;
+  }
+  .logo a {
+    font-size: 2rem;
+  }
+  .nav-links {
+    font-size: 1.3rem;
+    gap: 20px;
+  }
+  .other-links {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .login {
+    justify-content: center;
+  }
+  /*------------------------------------------*/
+  .item-1 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 6;
+    padding: 1rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  /*-------------------------------------------*/
+
+  .background-item-2,
+  .background-item-3,
+  .background-item-4,
+  .background-item-5 {
+    height: 400px;
+  }
+
+  .item-2,
+  .item-4 {
+    grid-column: 1 / span 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .item-3,
+  .item-5 {
+    grid-column: 4 / span 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*-------------------------------------------*/
+  .content-item-6,
+  .content-item-7,
+  .content-item-8 {
+    font-size: 1rem;
+  }
+  .item-7,
+  .item-8 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-item-7,
+  .content-item-8 {
+    flex-direction: column;
+  }
+  .item img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+
+  .item-6 {
+    grid-column: 1 / span 6;
+  }
+  .item-7 {
+    grid-column: 1 / span 3;
+  }
+  .item-8 {
+    grid-column: 4 / span 3;
+  }
+
+  /*-------------------------------------------*/
+  .item-9 {
+    grid-column: 1 / span 6;
+    display: flex;
+  }
+  .item-9 a {
+    font-size: 1rem;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+  }
+  /*----------------Footer--------------------------*/
+  .item-9-sigin {
+    display: none;
+  }
+  .fotnot {
+    font-size: 1rem;
+  }
+}
+
+/*------------- max-width:1000---------------------*/
+/*
+@media (max-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 1rem;
+    width: 100%;
+    height: 100vh;
+  }
+  /*------------------------------------------
+  .item item-0 {
+    display: flex;
+    grid-column: 1 / span 6;
+  }
+  .logo a {
+    font-size: 2rem;
+  }
+  .nav-links {
+    font-size: 1.3rem;
+    gap: 20px;
+  }
+  .other-links {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .login {
+    justify-content: center;
+  }
+  /*------------------------------------------
+  .item-1 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 6;
+    padding: 1rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  /*-------------------------------------------
+
+  .background-item-2,
+  .background-item-3,
+  .background-item-4,
+  .background-item-5 {
+    height: 400px;
+  }
+
+  .item-2,
+  .item-4 {
+    grid-column: 1 / span 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .item-3,
+  .item-5 {
+    grid-column: 4 / span 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*-------------------------------------------
+  .content-item-6,
+  .content-item-7,
+  .content-item-8 {
+    font-size: 1rem;
+  }
+  .item-7,
+  .item-8 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-item-7,
+  .content-item-8 {
+    flex-direction: column;
+  }
+  .item img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+
+  .item-6 {
+    grid-column: 1 / span 6;
+  }
+  .item-7 {
+    grid-column: 1 / span 3;
+  }
+  .item-8 {
+    grid-column: 4 / span 3;
+  }
+
+  /*-------------------------------------------
+  .item-9 {
+    grid-column: 1 / span 6;
+    display: flex;
+  }
+  .item-9 a {
+    font-size: 1rem;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+  }
+  /*----------------Footer--------------------------
+  .item-9-sigin {
+    display: none;
+  }
+  .fotnot {
+    font-size: 1rem;
+  }
+}
+*/
