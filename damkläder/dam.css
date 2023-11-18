@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.background {
+  background: url("/assets/5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.active-link {
+  border-bottom: 1px solid;
+}
+
+.item {
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-size: var(--fz);
+  line-height: var(--lh);
+  display: flex;
+  justify-content: center;
+}
+/* här kan du kontrollera alla img i containern*/
+.item img {
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+.item-0 {
+  grid-column: 1 / span 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #2193b0;
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.item-0 a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.logo a {
+  font-size: 3rem;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+.nav-links {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.3s ease;
+}
+.other-links {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+.other-links .kontaktaOss {
+  border: 1px solid #93caed;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background-color: #93caed;
+}
+.other-links .login {
+  border: 1px solid #93caed;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background-color: #424656;
+  color: white;
+}
+
+/* hover effekt 
+  .logo a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  */
+.nav-links a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.other-links a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
