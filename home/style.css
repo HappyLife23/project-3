@@ -1,7 +1,7 @@
 :root {
   --lh: 2rem;
   --font-family: "Roboto", sans-serif;
-  --fz: 1.5rem;
+  --fz: 1.1rem;
 }
 * {
   box-sizing: border-box;
@@ -82,8 +82,8 @@ html {
 }
 
 .logo a {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   transition: transform 0.3s ease;
 }
 .nav-links {
