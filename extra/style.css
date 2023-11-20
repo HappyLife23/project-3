@@ -1,60 +1,48 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
 body {
-  position: relative;
-  height: 100%;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: hsla(312, 77%, 86%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(312, 77%, 86%, 1) 0%,
+    hsla(220, 61%, 79%, 1) 100%
+  );
 }
 
-section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  position: relative;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+#button-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.title {
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  letter-spacing: 0.3rem;
-  z-index: 5;
-  color: transparent;
-  background-position: 0 0;
-  animation: animated-text 20s linear infinite;
+button {
+  width: 100px;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  border-radius: 999px;
 }
 
-/*---- denna gör att den rullar ----------*/
-@keyframes animated-text {
-  100% {
-    background-position: 200% 0;
+.expandingAnimation {
+  animation-name: expanding-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-timing-function: ease;
+}
+
+@keyframes expanding-animation {
+  0% {
+    width: 100px;
+    height: 30px;
   }
-}
-
-.one {
-  -webkit-text-stroke: 1px rgba(16, 104, 31, 0.8);
-  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e9d06cb6-2844-49ed-9bde-23d3364b9fa4);
-
-  -webkit-background-clip: text;
+  50% {
+    width: 200px;
+    height: 30px;
+  }
+  100% {
+    height: 60px;
+    width: 200px;
+  }
 }
