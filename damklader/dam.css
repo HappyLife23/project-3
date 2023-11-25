@@ -26,66 +26,51 @@ html {
 }
 */
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  height: 100vh;
+:root {
+  --fs: 1.2rem;
+  --color: black;
+  --font-family: "Roboto", "Sans-serif";
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: gird;
+  grid-template-columns: repeat(4, 1fr);
+}
 .active-link {
   border-bottom: 1px solid;
+}
+
+.item-0 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #a1dcea;
 }
 .logo {
   display: none;
 }
-
-.item-0 {
-  grid-column: 1 / span 3;
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-
-  background: #2193b0;
-  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-}
-
-.item-0 a {
-  display: flex;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
-
 .nav-links {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  transition: transform 0.3s ease;
-  padding: 0.5rem;
 }
 .other-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 15px;
-  transition: transform 0.3s ease;
 }
-.other-links .kontaktaOss {
-  border: 1px solid #93caed;
-  padding: 6px 12px;
-  border-radius: 10px;
-  background-color: #93caed;
-  justify-content: center;
-}
-.other-links .login {
-  border: 1px solid #93caed;
-  padding: 6px 12px;
-  border-radius: 10px;
-  background-color: #424656;
-  color: white;
-  justify-content: center;
+.nav-links a,
+.other-links a {
+  color: var(--color);
+  text-decoration: none;
 }
 
 /*-----hover effekt-------*/

@@ -1,6 +1,6 @@
 :root {
   --lh: 2rem;
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Roboto", "sans-serif";
   --fz: 1.1rem;
 }
 * {
@@ -54,9 +54,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #2193b0;
-  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  background-color: #a1dcea;
 }
 /* denna kod låter att hover-effekten fungerar */
 .item-0 .nav-links,
@@ -518,119 +516,3 @@ html {
     font-size: 1rem;
   }
 }
-
-/*------------- max-width:1400---------------------*/
-/*
-@media (min-width: 1400px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-
-    gap: 1rem;
-    width: 100%;
-    height: 100vh;
-  }
-  /*------------------------------------------
-  .item item-0 {
-    display: flex;
-    grid-column: 1 / span 6;
-  }
-  .logo a {
-    font-size: 2rem;
-  }
-  .nav-links {
-    font-size: 1.3rem;
-    gap: 20px;
-  }
-  .other-links {
-    flex-direction: column;
-    font-size: 1rem;
-  }
-  .login {
-    justify-content: center;
-  }
-  /*------------------------------------------
-  .item-1 {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / span 6;
-    padding: 1rem;
-  }
-  .content {
-    font-size: 1rem;
-  }
-  /*-------------------------------------------
-
-  .background-item-2,
-  .background-item-3,
-  .background-item-4,
-  .background-item-5 {
-    height: 400px;
-  }
-
-  .item-2,
-  .item-4 {
-    grid-column: 1 / span 3;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .item-3,
-  .item-5 {
-    grid-column: 4 / span 3;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  /*-------------------------------------------
-  .content-item-6,
-  .content-item-7,
-  .content-item-8 {
-    font-size: 1rem;
-  }
-  .item-7,
-  .item-8 {
-    display: flex;
-    flex-direction: column;
-  }
-  .content-item-7,
-  .content-item-8 {
-    flex-direction: column;
-  }
-  .item img {
-    display: flex;
-    width: 100%;
-    height: 400px;
-  }
-
-  .item-6 {
-    grid-column: 1 / span 6;
-  }
-  .item-7 {
-    grid-column: 1 / span 3;
-  }
-  .item-8 {
-    grid-column: 4 / span 3;
-  }
-
-  /*-------------------------------------------
-  .item-9 {
-    grid-column: 1 / span 6;
-    display: flex;
-  }
-  .item-9 a {
-    font-size: 1rem;
-    padding: 0.5rem;
-    justify-content: space-evenly;
-  }
-  /*----------------Footer--------------------------
-  .item-9-sigin {
-    display: none;
-  }
-  .fotnot {
-    font-size: 1rem;
-  }
-}
-*/

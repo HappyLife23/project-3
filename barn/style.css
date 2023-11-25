@@ -1,0 +1,46 @@
+:root {
+  --fs: 1.2rem;
+  --color: black;
+  --font-family: "Roboto", "Sans-serif";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: gird;
+  grid-template-columns: repeat(4, 1fr);
+}
+.active-link {
+  border-bottom: 1px solid;
+}
+
+.item-0 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #a1dcea;
+}
+.logo {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.other-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.nav-links a,
+.other-links a {
+  color: var(--color);
+  text-decoration: none;
+}

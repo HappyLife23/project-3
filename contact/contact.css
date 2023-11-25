@@ -23,9 +23,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-
-  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background-color: #a1dcea;
+  /*background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
   background: linear-gradient(to right, #6dd5ed, #2193b0);
+  */
 }
 /*
 .item-0 .nav-links,
