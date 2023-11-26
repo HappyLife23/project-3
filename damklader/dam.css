@@ -101,7 +101,6 @@ main img {
   border: none;
   background-color: #2193b0;
   color: white;
-  border-radius: 5px;
 
   display: flex;
   justify-content: center;
@@ -127,4 +126,48 @@ footer a {
 footer .fotnot {
   bottom: 0;
   left: 0;
+}
+
+/*----------- media queri ------------*/
+@media (min-width: 720px) and (max-width: 2220px) {
+  .background {
+    background: url("../assets/model6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .item-0 {
+    grid-column: 1 / span 6;
+  }
+
+  .logo {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .nav-links,
+  .other-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  main img {
+    width: 300px;
+    height: 300px;
+  }
 }
